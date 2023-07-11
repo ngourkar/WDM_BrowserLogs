@@ -1,0 +1,22 @@
+{
+  "firefox": {
+    "firefoxProfile": {
+      "dom.push.enabled": false
+    },
+    "excludeSwitches": [],
+    "preferences": {
+      "dom.webnotifications.enabled": false
+    },
+    "arguments": [
+      "disable-infobars",
+      "--disable-extensions",
+      "--disable-notifications"
+    ],
+    "maximize": true,
+    "acceptInsecureCerts": true,
+    "verboseLogging": true,
+    "headlessOptions": {
+      "headless": false
+    }
+  }
+}
