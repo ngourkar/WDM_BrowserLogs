@@ -54,12 +54,15 @@ public class BrowserLogDemo {
         String remoteUrl = "http://localhost:4444/wd/hub";
         setLogFileName("firefox");
 
-        try {
-            driver = new RemoteWebDriver(new URL(remoteUrl), getFirefoxOptions());
-        } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
-        }
-//        driver = new FirefoxDriver(getFirefoxOptions());
+        //Running script on docker container
+//        try {
+//            driver = new RemoteWebDriver(new URL(remoteUrl), getFirefoxOptions());
+//        } catch (MalformedURLException e) {
+//            throw new RuntimeException(e);
+//        }
+
+        //Running script locally
+        driver = new FirefoxDriver(getFirefoxOptions());
 
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
         System.out.println("Script started running");
@@ -92,7 +95,6 @@ public class BrowserLogDemo {
             throw new RuntimeException(e);
         }
 
-        // typecasting obj to JSONObject
         JSONObject firefoxConfiguration = (JSONObject) ((JSONObject) obj).get("firefox");
         System.out.println("json object is::"+firefoxConfiguration);
 
