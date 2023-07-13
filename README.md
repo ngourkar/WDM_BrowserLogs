@@ -1,6 +1,6 @@
 # WDM_BrowserLogs
 This sample project is intended to create browser logs for the executed script.
-For simplicity have written small script to run on Firefox driver and used gradle as a build tool.
+For simplicity have written small script to run on Firefox and Chrome driver and used gradle as a build tool.
 
 # Issue
 Currently, For the local exection with:
@@ -28,6 +28,20 @@ This behaviour is being observed on browsers like firefox, chrome, safari
 3. In BrowserLogDemo class on line 28,  If want to execute script on docker make boolean variable executeOnDocker to true  if want to execute script on local make  boolean variable executeOnDocker to false 
 4. Delete if any log file is present in deviceLogs directory
 5. Run the script 
+
+* Project run on intel chip for mac 
+
+# Run the Script
+
+Use command on terminal to run the particular test
+
+for firefox test:
+
+./gradlew clean test --tests "BrowserLogDemo.browserLogOnFirefox"
+
+for chrome test:
+
+./gradlew clean test --tests "BrowserLogDemo.browserLogOnChrome"
 
 # Observation
 After executing the script, log file name firefox.log file gets created at deviceLogs directory when ran on local 
