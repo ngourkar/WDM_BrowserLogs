@@ -1,0 +1,138 @@
+[1689165960.559][INFO]: Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 8733
+[1689165960.561][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1689165961.012][INFO]: [29fb6404fef217a7d5b500e9d4fba181] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--disable-extensions", "--disable-gpu", "--disable-setuid-sandbox", "--test-type", "--no-sandbox", "--ignore-ssl-errors=yes", "--disable-dev-shm-usage", "--ignore-certificate-errors", "--window-size=1920,1080", "--remote-allow-origins=*" ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--disable-extensions", "--disable-gpu", "--disable-setuid-sandbox", "--test-type", "--no-sandbox", "--ignore-ssl-errors=yes", "--disable-dev-shm-usage", "--ignore-certificate-errors", "--window-size=1920,1080", "--remote-allow-origins=*" ],
+         "extensions": [  ]
+      }
+   }
+}
+[1689165961.023][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1689165961.036][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1689165961.039][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-gpu --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-setuid-sandbox --disable-sync --enable-automation --enable-logging --ignore-certificate-errors --ignore-ssl-errors=yes --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --test-type --use-mock-keychain --user-data-dir=/var/folders/tt/y9bptv553xn6t6kqvl3yw3b1bbs5fv/T/.com.google.Chrome.fjr1Oj --window-size=1920,1080 data:,
+[1689165968.667][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1689165969.346][INFO]: [29fb6404fef217a7d5b500e9d4fba181] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "114.0.5735.198",
+      "chrome": {
+         "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+         "userDataDir": "/var/folders/tt/y9bptv553xn6t6kqvl3yw3b1bbs5fv/T/.com.google.Chrome.fjr1Oj"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:53783"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "29fb6404fef217a7d5b500e9d4fba181"
+}
+[1689165970.139][INFO]: [29fb6404fef217a7d5b500e9d4fba181] COMMAND Navigate {
+   "url": "https://bonigarcia.dev/selenium-webdriver-java/"
+}
+[1689165970.140][INFO]: Waiting for pending navigations...
+[1689165970.142][INFO]: Done waiting for pending navigations. Status: ok
+[1689165972.288][INFO]: Waiting for pending navigations...
+[1689165973.703][INFO]: Done waiting for pending navigations. Status: ok
+[1689165973.703][INFO]: [29fb6404fef217a7d5b500e9d4fba181] RESPONSE Navigate
+[1689165973.975][INFO]: [29fb6404fef217a7d5b500e9d4fba181] COMMAND GetTitle {
+}
+[1689165973.975][INFO]: Waiting for pending navigations...
+[1689165973.976][INFO]: Done waiting for pending navigations. Status: ok
+[1689165974.000][INFO]: Waiting for pending navigations...
+[1689165974.001][INFO]: Done waiting for pending navigations. Status: ok
+[1689165974.001][INFO]: [29fb6404fef217a7d5b500e9d4fba181] RESPONSE GetTitle "Hands-On Selenium WebDriver with Java"
+[1689165974.258][INFO]: [29fb6404fef217a7d5b500e9d4fba181] COMMAND Quit {
+}
+[1689165974.315][INFO]: [29fb6404fef217a7d5b500e9d4fba181] RESPONSE Quit
